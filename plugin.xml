@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="Rain1 Template"
+            extensions="html"
+            icon="icons/sample.gif"
+            contributorClass="rain1template.editors.Rain1TemplateEditorContributor"
+            class="rain1template.editors.Rain1TemplateEditor"
+            default="true"
+            id="rain1template.editors.Rain1TemplateEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="Sample Wizards"
+            id="rain1template">
+      </category>
+      <wizard
+            name="Multi-page Editor file"
+            icon="icons/sample.gif"
+            category="rain1template"
+            class="rain1template.wizards.SampleNewWizard"
+            id="rain1template.wizards.SampleNewWizard">
+      </wizard>
+   </extension>
+
+</plugin>
