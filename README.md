@@ -2,6 +2,7 @@ Rain1Template
 =============
 
 a new way for a php template engine.
+
 This is a plugin for eclipse. From Multipage editor example plugin.
 
 First:
@@ -16,18 +17,30 @@ What to do I want?
 - In template I want a derived text from source with simple regexp
 
 example:
+-----------------
+
 Template:
 Hello {$name}
+
 {foreach $arr as $k=>$v}
+
 {$k} => {$v}
+
 {/foreach}
----------------
+
+
+
 Source:
 Hello <?php echo $name?>
+
 <?php foreach($arr as $k=>$v):?>
+
 <?php echo $k?> => <?php echo $v?>
+
 <?php endforeach?>
 
+
 known issues:
+------------------
 - Missed Syntax highlight for template tab (missed grammar)
 - The file is always in "to save" status
