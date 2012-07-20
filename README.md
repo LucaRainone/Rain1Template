@@ -1,4 +1,4 @@
-Rain1Template
+Rain1Template (Eclipse Plugin)
 =============
 
 a new way for a php template engine.
